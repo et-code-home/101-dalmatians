@@ -119,14 +119,20 @@ productArr.map(product => console.log(product.quantity));
 // Console.log() the name of each dog
 dogs.forEach((dog) => console.log(dog.name))
 
-// Add a "gender" property to each dog in the original array and randomly assign "M" or "F"
+// Add a "gender" property to each dog in the original array and randomly assign "male", "female", "nonbinary" or "other"
 dogs.forEach((dog) => {
   const rand = Math.random()
-  if(rand < 0.5) {
-    dog.gender = "M"
+  if(rand < 0.25) {
+    dog.gender = "male"
+  }
+  else if(rand < 0.5) {
+    dog.gender = "female"
+  }
+  else if(rand < 0.75) {
+    dog.gender = "nonbinary"
   }
   else {
-    dog.gender = "F"
+    dog.gender = "other"
   }
 })
 console.log(dogs)
