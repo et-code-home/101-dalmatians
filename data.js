@@ -101,4 +101,4 @@ const dogs = [
     { "name": 'Fidget', "age": 9, "spots": 29, "height": 17, "weight": 15 },
     { "name": 'Hooper', "age": 6, "spots": 42, "height": 15, "weight": 22}];
 
-    export default dogs;
+    module.exports = dogs
